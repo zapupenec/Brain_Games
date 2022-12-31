@@ -13,7 +13,7 @@ const endRange = 20;
 
 for (let i = 1; i <= countQuestion; i += 1) {
   const randomNumber = Math.floor(Math.random() * endRange);
-  console.log(`Qustion: ${randomNumber}`);
+  console.log(`Question: ${randomNumber}`);
   const answer = readlineSync.question('Your answer: ');
   const correctAnswer = randomNumber % 2 === 0 ? 'yes' : 'no';
 
