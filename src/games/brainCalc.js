@@ -32,7 +32,7 @@ const ruleCalc = () => {
 const brainCalc = () => {
   const userName = greeting();
   console.log('What is the result of the expression?');
-  game(userName, ruleCalc());
+  game(userName, ruleCalc);
 };
 
 export default brainCalc;

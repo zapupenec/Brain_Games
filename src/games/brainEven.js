@@ -11,7 +11,7 @@ const ruleEven = () => {
 const brainEven = () => {
   const userName = greeting();
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
-  game(userName, ruleEven());
+  game(userName, ruleEven);
 };
 
 export default brainEven;

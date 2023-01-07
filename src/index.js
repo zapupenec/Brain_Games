@@ -11,7 +11,7 @@ const greeting = () => {
 
 const game = (userName, rule) => {
   for (let i = 1; i <= countRound; i += 1) {
-    const [question, correctAnswer] = rule;
+    const [question, correctAnswer] = rule();
     console.log(`Question: ${question}`);
     const answer = readlineSync.question('Your answer: ');
 
