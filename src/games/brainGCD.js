@@ -12,8 +12,8 @@ const getGCD = (a, b) => {
 };
 
 const ruleGCD = () => {
-  const a = random(100);
-  const b = random(100);
+  const a = random(1, 100);
+  const b = random(1, 100);
 
   const question = `${a} ${b}`;
   const correctAnswer = String(getGCD(a, b));

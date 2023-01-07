@@ -2,7 +2,7 @@ import { greeting, game } from '../index.js';
 import random from '../random.js';
 
 const ruleEven = () => {
-  const randomNumber = random(25);
+  const randomNumber = random(1, 25);
   const question = randomNumber;
   const correctAnswer = randomNumber % 2 === 0 ? 'yes' : 'no';
   return [question, correctAnswer];

@@ -1,3 +1,3 @@
-const random = (endRange) => Math.ceil(Math.random() * endRange);
+const random = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
 
 export default random;

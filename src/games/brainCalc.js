@@ -5,8 +5,8 @@ const operators = ['+', '-', '*'];
 const operatorCount = operators.length - 1;
 
 const ruleCalc = () => {
-  const a = random(25);
-  const b = random(25);
+  const a = random(1, 25);
+  const b = random(1, 25);
   const operatorNumber = random(operatorCount);
   const operator = operators[operatorNumber];
 
