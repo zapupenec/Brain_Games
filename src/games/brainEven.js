@@ -1,17 +1,15 @@
-import { greeting, game } from '../index.js';
+import game from '../index.js';
 import random from '../random.js';
 
 const ruleEven = () => {
   const randomNumber = random(1, 25);
-  const question = randomNumber;
   const correctAnswer = randomNumber % 2 === 0 ? 'yes' : 'no';
-  return [question, correctAnswer];
+  return [randomNumber, correctAnswer];
 };
 
 const brainEven = () => {
-  const userName = greeting();
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
-  game(userName, ruleEven);
+  game(ruleEven);
 };
 
 export default brainEven;

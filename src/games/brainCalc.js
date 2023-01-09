@@ -1,7 +1,21 @@
-import { greeting, game } from '../index.js';
+import game from '../index.js';
 import random from '../random.js';
 
 const operators = ['+', '-', '*'];
+
+const calculate = (a, b, operator) => {
+  switch (operator) {
+    case '+':
+      return String(a + b);
+    case '-':
+      return String(a - b);
+    case '*':
+      return String(a * b);
+    default:
+      break;
+  }
+  return NaN;
+};
 
 const ruleCalc = () => {
   const a = random(1, 10);
@@ -10,29 +24,15 @@ const ruleCalc = () => {
   const operatorNumber = random(0, operators.length - 1);
   const operator = operators[operatorNumber];
 
-  let correctAnswer;
-
-  switch (operator) {
-    case '+':
-      correctAnswer = String(a + b);
-      break;
-    case '-':
-      correctAnswer = String(a - b);
-      break;
-    case '*':
-      correctAnswer = String(a * b);
-      break;
-    default:
-      break;
-  }
   const question = `${a} ${operator} ${b}`;
+  const correctAnswer = calculate(a, b, operator);
+
   return [question, correctAnswer];
 };
 
 const brainCalc = () => {
-  const userName = greeting();
   console.log('What is the result of the expression?');
-  game(userName, ruleCalc);
+  game(ruleCalc);
 };
 
 export default brainCalc;

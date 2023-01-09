@@ -1,4 +1,4 @@
-import { greeting, game } from '../index.js';
+import game from '../index.js';
 import random from '../random.js';
 
 const isPrime = (num) => {
@@ -20,9 +20,8 @@ const rulePrime = () => {
 };
 
 const brainPrime = () => {
-  const userName = greeting();
   console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
-  game(userName, rulePrime);
+  game(rulePrime);
 };
 
 export default brainPrime;
