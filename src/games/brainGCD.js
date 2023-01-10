@@ -2,13 +2,18 @@ import game from '../index.js';
 import random from '../random.js';
 
 const getGCD = (a, b) => {
-  const min = a < b ? a : b;
-  for (let i = min; i > 0; i -= 1) {
+  if (a === 0 || b === 0) {
+    throw new Error('None of the numbers must be 0!');
+  }
+
+  const min = Math.abs(a) < Math.abs(b) ? a : b;
+  for (let i = Math.abs(min); i > 1; i -= 1) {
     if (a % i === 0 && b % i === 0) {
       return i;
     }
   }
-  return NaN;
+
+  return 1;
 };
 
 const ruleGCD = () => {

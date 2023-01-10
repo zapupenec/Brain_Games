@@ -6,15 +6,14 @@ const operators = ['+', '-', '*'];
 const calculate = (a, b, operator) => {
   switch (operator) {
     case '+':
-      return String(a + b);
+      return a + b;
     case '-':
-      return String(a - b);
+      return a - b;
     case '*':
-      return String(a * b);
+      return a * b;
     default:
-      break;
+      throw new Error(`Unknown operator: ${operator}!`);
   }
-  return NaN;
 };
 
 const ruleCalc = () => {
@@ -25,7 +24,7 @@ const ruleCalc = () => {
   const operator = operators[operatorNumber];
 
   const question = `${a} ${operator} ${b}`;
-  const correctAnswer = calculate(a, b, operator);
+  const correctAnswer = String(calculate(a, b, operator));
 
   return [question, correctAnswer];
 };
