@@ -1,4 +1,4 @@
-import game from '../index.js';
+import playGame from '../index.js';
 import random from '../random.js';
 
 const getGCD = (a, b) => {
@@ -16,7 +16,7 @@ const getGCD = (a, b) => {
   return 1;
 };
 
-const ruleGCD = () => {
+const getRuleBrainGCD = () => {
   const a = random(1, 100);
   const b = random(1, 100);
 
@@ -26,9 +26,9 @@ const ruleGCD = () => {
   return [question, correctAnswer];
 };
 
-const brainGCD = () => {
+const runBrainGCD = () => {
   console.log('Find the greatest common divisor of given numbers.');
-  game(ruleGCD);
+  playGame(getRuleBrainGCD);
 };
 
-export default brainGCD;
+export default runBrainGCD;

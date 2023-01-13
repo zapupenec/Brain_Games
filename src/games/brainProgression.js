@@ -1,4 +1,4 @@
-import game from '../index.js';
+import playGame from '../index.js';
 import random from '../random.js';
 
 const generateProgression = (start, lenght, step) => {
@@ -22,7 +22,7 @@ const hideItemOfProgression = (progression) => {
   return [result, hiddenItem];
 };
 
-const ruleProgression = () => {
+const getRuleBrainProgression = () => {
   const firstItem = random(1, 20);
   const lenghtProgression = random(5, 10);
 
@@ -36,9 +36,9 @@ const ruleProgression = () => {
   return [question, correctAnswer];
 };
 
-const brainProgression = () => {
+const runBrainProgression = () => {
   console.log('What number is missing in the progression?');
-  game(ruleProgression);
+  playGame(getRuleBrainProgression);
 };
 
-export default brainProgression;
+export default runBrainProgression;

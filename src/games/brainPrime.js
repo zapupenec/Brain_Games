@@ -1,4 +1,4 @@
-import game from '../index.js';
+import playGame from '../index.js';
 import random from '../random.js';
 
 const isPrime = (num) => {
@@ -11,7 +11,7 @@ const isPrime = (num) => {
   return true;
 };
 
-const rulePrime = () => {
+const getRuleBrainPrime = () => {
   const randomNumber = random(2, 10);
   const question = `${randomNumber}`;
 
@@ -19,9 +19,9 @@ const rulePrime = () => {
   return [question, correctAnswer];
 };
 
-const brainPrime = () => {
+const runBrainPrime = () => {
   console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
-  game(rulePrime);
+  playGame(getRuleBrainPrime);
 };
 
-export default brainPrime;
+export default runBrainPrime;

@@ -1,15 +1,17 @@
-import game from '../index.js';
+import playGame from '../index.js';
 import random from '../random.js';
 
-const ruleEven = () => {
+const isEven = (num) => num % 2 === 0;
+
+const getRuleBrainEven = () => {
   const randomNumber = random(1, 25);
-  const correctAnswer = randomNumber % 2 === 0 ? 'yes' : 'no';
+  const correctAnswer = isEven(randomNumber) ? 'yes' : 'no';
   return [randomNumber, correctAnswer];
 };
 
-const brainEven = () => {
+const runBrainEven = () => {
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
-  game(ruleEven);
+  playGame(getRuleBrainEven);
 };
 
-export default brainEven;
+export default runBrainEven;

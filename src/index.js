@@ -2,7 +2,7 @@ import readlineSync from 'readline-sync';
 
 const countRound = 3;
 
-const game = (rule) => {
+const playGame = (rule) => {
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
@@ -24,4 +24,4 @@ const game = (rule) => {
   console.log(`Congratulations, ${userName}!`);
 };
 
-export default game;
+export default playGame;

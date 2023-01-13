@@ -1,4 +1,4 @@
-import game from '../index.js';
+import playGame from '../index.js';
 import random from '../random.js';
 
 const operators = ['+', '-', '*'];
@@ -16,7 +16,7 @@ const calculate = (a, b, operator) => {
   }
 };
 
-const ruleCalc = () => {
+const getRuleBrainCalc = () => {
   const a = random(1, 10);
   const b = random(1, 10);
 
@@ -29,9 +29,9 @@ const ruleCalc = () => {
   return [question, correctAnswer];
 };
 
-const brainCalc = () => {
+const runBrainCalc = () => {
   console.log('What is the result of the expression?');
-  game(ruleCalc);
+  playGame(getRuleBrainCalc);
 };
 
-export default brainCalc;
+export default runBrainCalc;
