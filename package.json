@@ -17,14 +17,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zapupenec/frontend-project-44.git"
+    "url": "git+https://github.com/zapupenec/brain_games.git"
   },
   "author": "zapupenec",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/zapupenec/frontend-project-44/issues"
+    "url": "https://github.com/zapupenec/brain_games/issues"
   },
-  "homepage": "https://github.com/zapupenec/frontend-project-44#readme",
+  "homepage": "https://github.com/zapupenec/brain_games#readme",
   "dependencies": {
     "readline-sync": "^1.4.10"
   },
