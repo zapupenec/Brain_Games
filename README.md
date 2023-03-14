@@ -1,37 +1,54 @@
+[![Actions Status](https://github.com/zapupenec/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/zapupenec/frontend-project-44/actions)
+[![Maintainability](https://api.codeclimate.com/v1/badges/6fef848567a94d393531/maintainability)](https://codeclimate.com/github/zapupenec/frontend-project-44/maintainability)
+
 ## «Игры разума» 
 ***
 «Игры разума» — набор из пяти консольных игр, построенных по принципу популярных мобильных приложений для прокачки мозга. Каждая игра задает вопросы, на которые нужно дать правильные ответы. После трех правильных ответов считается, что игра пройдена. Неправильные ответы завершают игру и предлагают пройти ее заново.
 
 Список игр:
-* Калькулятор. Арифметические выражения, которые необходимо вычислить (brain-calc).
-* Прогрессия. Поиск пропущенных чисел в последовательности чисел (brain-progression).
-* Определение четного числа. (brain-even).
-* Определение наибольшего общего делителя. (brain-gcd).
+* Определение четного числа.
+* Калькулятор. Арифметические выражения, которые необходимо вычислить
+* Определение наибольшего общего делителя.
+* Прогрессия. Поиск пропущенных чисел в последовательности чисел.
 * Определение простого числа. (brain-prime).
 
 ***
+## Установка
+Убедитесь, что у вас установлена Node.js версии 14 и выше.
+```
+node --version
+```
+Скопируйте репозиторий локально и установите зависимости.
+```
+make install
+```
+## Примеры процесса игры
+Игра «Определение четного числа»
+```
+brain-even
+```
+[![asciicast](https://asciinema.org/a/uYNN4075XV8PkOl0bEuraYJ0U.svg)](https://asciinema.org/a/uYNN4075XV8PkOl0bEuraYJ0U)
 
-### Статус Hexlet tests and linter:
-[![Actions Status](https://github.com/zapupenec/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/zapupenec/frontend-project-44/actions)
+Игра «Калькулятор»
+```
+brain-calc
+```
+[![asciicast](https://asciinema.org/a/OaRiDfwOiix6DJntyimRQqmq5.svg)](https://asciinema.org/a/OaRiDfwOiix6DJntyimRQqmq5)
 
-### Статус Code Climate:
-[![Maintainability](https://api.codeclimate.com/v1/badges/6fef848567a94d393531/maintainability)](https://codeclimate.com/github/zapupenec/frontend-project-44/maintainability)
+Игра «Определение наибольшего общего делителя»
+```
+brain-gcd
+```
+[![asciicast](https://asciinema.org/a/98DSxcNWm50CiXo6FWdOLErUJ.svg)](https://asciinema.org/a/98DSxcNWm50CiXo6FWdOLErUJ)
 
-### Убедитесь, что у вас установлена Node.js версии 13 и выше.
-    node --version
+Игра «Прогрессия»
+```
+brain-progression
+```
+[![asciicast](https://asciinema.org/a/tdTRsBCMxIJQ20hekqjKYxV2z.svg)](https://asciinema.org/a/tdTRsBCMxIJQ20hekqjKYxV2z)
 
-## Демонстрация установки и процесса игры «Brain Even»
-
-[![asciicast](https://asciinema.org/a/Ghol8HZxqJHO2B36pbkebKapx.svg)](https://asciinema.org/a/Ghol8HZxqJHO2B36pbkebKapx)
-## Демонстрация процесса игры «Brain Calc»
-
-[![asciicast](https://asciinema.org/a/qLVxSF9IVx24i8wmvXrikZg8t.svg)](https://asciinema.org/a/qLVxSF9IVx24i8wmvXrikZg8t)
-## Демонстрация процесса игры «Brain GCD»
-
-[![asciicast](https://asciinema.org/a/LzAQbhgUzRk3qDootd1IlPSpP.svg)](https://asciinema.org/a/LzAQbhgUzRk3qDootd1IlPSpP)
-## Демонстрация процесса игры «Brain Progression»
-
-[![asciicast](https://asciinema.org/a/LBtnJgICyW4QAeJQxygSVhEQ3.svg)](https://asciinema.org/a/LBtnJgICyW4QAeJQxygSVhEQ3)
-## Демонстрация процесса игры «Brain Prime»
-
-[![asciicast](https://asciinema.org/a/McTAgbpbtILqot1fdXPrB6uow.svg)](https://asciinema.org/a/McTAgbpbtILqot1fdXPrB6uow)
+Игра «Определение простого числа»
+```
+brain-prime
+```
+[![asciicast](https://asciinema.org/a/y8Sg0q5M0Kw4fR6BoGMjhfKZR.svg)](https://asciinema.org/a/y8Sg0q5M0Kw4fR6BoGMjhfKZR)
