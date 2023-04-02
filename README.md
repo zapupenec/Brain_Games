@@ -1,61 +1,62 @@
 [![Actions Status](https://github.com/zapupenec/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/zapupenec/frontend-project-44/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/6fef848567a94d393531/maintainability)](https://codeclimate.com/github/zapupenec/frontend-project-44/maintainability)
 
-## «Игры разума» 
-***
-«Игры разума» — набор из пяти консольных игр, построенных по принципу популярных мобильных приложений для прокачки мозга. Каждая игра задает вопросы, на которые нужно дать правильные ответы. После трех правильных ответов считается, что игра пройдена. Неправильные ответы завершают игру и предлагают пройти ее заново.
+EN | [RU](https://github.com/zapupenec/brain_games/blob/main/README-ru.md)
 
-Список игр:
-* Определение четного числа.
-* Калькулятор. Арифметические выражения, которые необходимо вычислить
-* Определение наибольшего общего делителя.
-* Прогрессия. Поиск пропущенных чисел в последовательности чисел.
-* Определение простого числа. (brain-prime).
+## «Brain games» 
 
-***
-## Установка
-Убедитесь, что у вас установлена Node.js версии 14 и выше.
+«Brain games» is a set of five console games based on the popular mobile brain-pumping apps. Each game asks questions to which you must give the right answers. After three correct answers, the game is considered completed. Incorrect answers end the game and offer to go through it again
+
+Games:
+* Even number determination.
+* Calculator. Arithmetic expressions to be calculated
+* Determination of the greatest common divisor.
+* Progression. Finding missing numbers in a sequence of numbers.
+* Determining a prime number.
+
+## Installation
+Make sure you have Node.js version 14 or higher installed.
 ```
 node --version
 ```
-Скопируйте репозиторий локально и установите зависимости.
+Clone the repository locally and install the dependencies.
 ```
 make install
 ```
-Прокект учебный и не опубликован. Установите пакет глобально из локальной директории. Для этого из корневой директории проекта запустите команду:
+The project is a tutorial and has not been published. Install the package globally from the local directory. From the project root directory, run the command:
 ```
 npm link
 ```
-Возможно потребуется использовать `sudo`
+You may need to use `sudo `
 ```
 sudo npm link
 ```
-## Примеры процесса игры
-Игра «Определение четного числа»
+## Examples of the game process
+### «Even number determination»
 ```
 brain-even
 ```
 [![asciicast](https://asciinema.org/a/uYNN4075XV8PkOl0bEuraYJ0U.svg)](https://asciinema.org/a/uYNN4075XV8PkOl0bEuraYJ0U)
 
-Игра «Калькулятор»
+### «Calculator»
 ```
 brain-calc
 ```
 [![asciicast](https://asciinema.org/a/OaRiDfwOiix6DJntyimRQqmq5.svg)](https://asciinema.org/a/OaRiDfwOiix6DJntyimRQqmq5)
 
-Игра «Определение наибольшего общего делителя»
+### «Determination of the greatest common divisor»
 ```
 brain-gcd
 ```
 [![asciicast](https://asciinema.org/a/98DSxcNWm50CiXo6FWdOLErUJ.svg)](https://asciinema.org/a/98DSxcNWm50CiXo6FWdOLErUJ)
 
-Игра «Прогрессия»
+### «Progression»
 ```
 brain-progression
 ```
 [![asciicast](https://asciinema.org/a/tdTRsBCMxIJQ20hekqjKYxV2z.svg)](https://asciinema.org/a/tdTRsBCMxIJQ20hekqjKYxV2z)
 
-Игра «Определение простого числа»
+### «Determining a prime number»
 ```
 brain-prime
 ```
