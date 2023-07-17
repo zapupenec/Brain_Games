@@ -1,5 +1,5 @@
-[![Actions Status](https://github.com/zapupenec/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/zapupenec/frontend-project-44/actions)
-[![Maintainability](https://api.codeclimate.com/v1/badges/6fef848567a94d393531/maintainability)](https://codeclimate.com/github/zapupenec/frontend-project-44/maintainability)
+[![Actions Status](https://github.com/zapupenec/brain_games/workflows/hexlet-check/badge.svg)](https://github.com/zapupenec/brain_games/actions)
+[![Maintainability](https://api.codeclimate.com/v1/badges/14def8b9e58e7235557c/maintainability)](https://codeclimate.com/github/zapupenec/brain_games/maintainability)
 
 [EN](https://github.com/zapupenec/brain_games) | RU
 
